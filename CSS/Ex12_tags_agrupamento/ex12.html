@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags de Agrupamento</title>
+
+    <style>
+        body{
+            background-color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: white;
+            margin: 10px;
+            padding: 5px;
+            border-radius: 7px;
+        }
+        header > h1{
+            text-align: center;
+
+        }
+        section > a{
+            text-decoration: none;
+            color: black;
+            margin-right: 10px;
+
+        }
+        section > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            margin: 10px;
+            padding: 5px;
+            border-radius: 7px;
+        }
+        footer{
+            background-color: black;
+            color: grey;
+            text-align: center;
+            font-weight: bold;
+
+            padding: 8px;
+            margin: 10px;
+            border-radius: 7px;
+        }
+        footer>p{             /*Isso aqui é pq o paragrafo esta com a margin muito grande ,ai bugava com o padding do footer*/
+            margin: 0px;
+        }
+
+
+        article{
+            text-align: justify;
+            padding: 5px;
+        }
+        article > aside{
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+
+        .conteudo{
+            background-color: lightgrey;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Novas tags para melhor agrupamento e organização</h1>
+        <section class="conteudo">
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </section>
+
+    </header>
+    <main>
+        <h2>Brasil</h2>
+
+        <section class="conteudo">
+            <article>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quo molestiae, quasi laborum illo inventore accusantium a, doloremque dicta non dolor molestias dolorem autem delectus consequuntur iste unde facilis ratione?</p>
+
+                <aside>Escrito por <q>Merin</q></aside>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p>Rodape de Merin</p>
+
+    </footer>
+    
+</body>
+</html>

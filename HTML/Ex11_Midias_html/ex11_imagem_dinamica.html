@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem dinamica</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+        <p>Na verdade é tipo uma sibstituição de imagem dependendo da largura da tela</p>
+        <p>Usa:</p>
+            <ul>
+                <li>A tag "picture";</li>
+                <li>Dentro dela uma "img" coma bese (ultimo termo dentro de "picture");</li>
+                <li>E crecendo de baixo para cima as tags "source:media:type" que substituem a img quando ela atingir um certo limite de largura em px;</li>
+            </ul>
+        <p>EX:</p>
+            <picture>
+                <source media="(max-width: 750px)" srcset="Imagem_ex/imagem_p.png" type="image/png">
+                <source media="(max-width: 1120px)" srcset="Imagem_ex/imagem_m.png" type="image/png">
+                <img src="Imagem_ex/imagem_G.png" alt="Imagem origem">
+            </picture>
+</body>
+</html>

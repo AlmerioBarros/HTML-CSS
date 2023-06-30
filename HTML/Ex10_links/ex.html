@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Trabalhando com Links</h1>
+        <h2>Links externos</h2>
+            <p>Definições:
+                <ul>
+                    <li>O termo de definição é ancora;</li>
+                    <li>Usa a teg "a";</li>
+                    <li>Na tag é pedido o href="", que é o URL do site destino;</li>
+                    <li>Recomendavel usar o target="_blank" ,que abre esse link em uma nova aba;</li>
+                    <li>Tb Recomendavel usar o rel="external",que diz q o link e destinado a um local externo;</li>
+                </ul>
+            </p>
+            <p>Agora um link que leva para um video da hora :) 
+                <a href="https://www.youtube.com/watch?v=bVTgviHwuQw" target="_blank" rel="external">Risos</a>
+            </p>
+
+        <h2>Links Internos</h2>
+            <p>Existe 2 tipos</p>
+                <ul>
+                    <li>O que esta na mesma pasta;</li>
+                    <li>O que esta em pastas diferentes</li>
+                </ul>
+
+            <h3>Na mesma pasta</h3>
+                <p>Se tiver na mesma pasta ,basta fazer normalmente e colocar o nome do documento ao inves de uma URL;</p>
+                <p>EX:</p>
+                <ul>
+                    <li>Esse link leva para <a href="ex_pagina02.html" rel="next">pagina 02</a> dessa pasta</li>
+                </ul>
+            <h3>Pastas Diferentes</h3>
+                <p>Se não estiver na mesma pasta,basta fazer normalmente mas colocar no href="" a pasta/documento </p>
+                <ul>
+                    <li>Esse link leva para <a href="Pasta_Ex/ex-pagina03.html" rel="next">pagina 03 </a>que esta em outra pasta</li>
+                </ul>
+
+        <h2>Link para Download</h2> 
+                <p>Se usa as seguntes coisas:</p>
+                    <ul>
+                        <li>href= "Documento a ser baixado"</li>
+                        <li>um download ="Documento a ser baixado</li>
+                        <li>Uma rel="application/tipo de documento a sr baixado</li>
+                    </ul>
+                <p>O rel tem q ser melhor procurado na tabela,pq nemsempre é esse formato;</p>
+                <p>EX de link de download:</p>
+                <a href="Pasta_Ex/Currículo .pdf" download="Currículo.pdf" type="application/pdf">Meu Curriculo </a>
+</body>
+</html>
