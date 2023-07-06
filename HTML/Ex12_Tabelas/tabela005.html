@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 05</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+
+            border-collapse: collapse;
+        }
+        td , th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        thead{
+            background-color: rgb(87, 86, 86);
+            color: white;
+        }
+        .mtotal{
+            text-align: left;
+            background-color: rgb(153, 153, 153);
+            color: white;
+            text-shadow: 0px 0px 0px 1px black;
+        }
+        .num{
+            text-align: right;
+            background-color: blue;
+        }
+        .letras{
+            background-color: brown;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Aprendo a tag "colgroup"</h1>
+        <p>A preguiça mata, mas vou reutilizar tabelas :)</p>
+        <p>Nessa eu tinha feito um class para alterar os numeros;</p>
+        <p>Mas vou tira-las e utilizar essa nova tag para facilitar</p>
+
+        <table>
+            <colgroup>
+                <col span="2" class="letras">
+                <col span="3" class="num">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th rowspan="2" scope="col">Area</td>
+                    <th rowspan="2" scope="col">Disciplinas</td>
+                    <th colspan="2" scope="colgroup">Notas</th>
+                    <th rowspan="2" scope="col">Media</th>
+                </tr>
+                <tr>
+                    <th scope="col">Nota 1</th>
+                    <th scope="col">Nota 2</th>
+                </tr>
+    
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="4" scope="rowgroup">Exatas</th>
+                    <td>Matematica</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td>Fisica</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td>Quimica</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td>Biologia</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr class="mtotal">
+                    <th  colspan="4" scope="row">Media de Exatas</th>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" scope="rowgroup">Humanas</th>
+                    <td>Historia</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td>Geografia</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr class="mtotal">
+                    <th colspan="4" scope="row">Media de Humanas</th>
+                    <td>0.0</td>
+            </tbody>
+        </table>
+
+        <p>Funcionou bem com cores,mas com a centralização do texto que eu queria fazer com os numeros não funcionou;</p>
+        <p>F</p>
+</body>
+</html>
