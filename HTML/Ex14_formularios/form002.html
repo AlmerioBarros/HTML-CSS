@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 02</title>
+</head>
+<body>
+    <h1>Segundo formulario</h1>
+
+    <form action="formulario.php" method="post" autocomplete="off">
+
+        <p>
+            <label for="inus">Nome de Usuario:</label>
+                <input type="text" name="nus" id="inus" required autocomplete="username" maxlength="20" minlength="8" size="10" placeholder="nome / e-mail" >
+        </p>
+
+        <p>
+            <label for="isen">Senha:</label>
+                <input type="password" name="sen" id="isen" required autocomplete="current-password" minlength="5" maxlength="10" size="8" placeholder="min de 5 dig">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+    </form>
+    
+</body>
+</html>
