@@ -1,0 +1,17 @@
+
+/*ESTILO DE IMPRESSORA*/
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+menu{
+    display: none;
+}
+article p{
+    text-align: justify;
+}
+article::after{
+    content: 'Esse artigo foi impresso atravez do site www.cursoemvideo.com';
+}
