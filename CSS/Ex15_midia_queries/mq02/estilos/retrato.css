@@ -1,0 +1,10 @@
+
+
+/*Configurações de RETRATO*/
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: #233EFF url('../imagens/cev-portrait.jpg') no-repeat center bottom;
+    background-size: contain;
+}

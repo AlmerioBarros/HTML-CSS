@@ -1,0 +1,10 @@
+
+
+/*Configurações de PAISAGEM*/
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: #233EFF url('../imagens/cev-landscape.jpg') no-repeat left bottom;
+    background-size: contain;
+}
