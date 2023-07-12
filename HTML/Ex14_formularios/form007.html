@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 07</title>
+</head>
+<body>
+    <h1>Setimo Formulario</h1>
+
+    <form action="" method="post">
+
+        <p>
+            <label for="iest">Estado:</label>
+            <select name="est" id="iest">
+                <option value="#" selected>----Escolha----</option>
+                <optgroup label="Centro-Oste">
+                    <option value="DF">Destrito Federal</option>
+                    <option value="GO">Goiás</option>
+                </optgroup>
+                <optgroup label="Nordeste">
+                    <option value="PB">Paraíba</option>
+                    <option value="BH">Bahia</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão :</label>
+                <input type="text" name="prof" id="iprof" list="profissao">
+                <datalist id="profissao">
+                    <option value="Adm">Administração</option>
+                    <option value="Pro">Programador</option>
+                    <option value="Entre">Entregador</option>
+                </datalist>
+        </p>
+
+        <p>
+            <textarea name="txt" id="itxt" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+    
+</body>
+</html>
