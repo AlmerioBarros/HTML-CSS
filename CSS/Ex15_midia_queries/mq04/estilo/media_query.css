@@ -1,3 +1,46 @@
 
 /*Outras versões*/
 
+/*Como a versão mobile ja esta feita,basta so adicionar as alterações das outras versões*/
+
+/*tamanho geral de todos */
+
+/* Telas pequenas : max de 600px
+   Celular: min de 600px / max de 768px
+   Tablet: min de 768px / max de 992px
+   PC : min de 992px / max de 1200px
+   Telas grandes: min de 1200px
+*/
+
+@media print {
+    body{
+        background-image: url('../imagens/back-print.jpg');
+    }
+    img#cel{display: none;}
+    img#tab{display: none;}
+    img#print{display: block;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+}
+@media screen and (min-width: 768px) {
+    body{
+        background: url('../imagens/back-tablet.jpg') center center;
+    }
+    img#cel{display: none;}
+    img#tab{display: block;}
+}
+@media screen  and (min-width: 992px){
+    body{
+        background: url('../imagens/back-pc.jpg') center center;
+    }
+    img#tab{display: none;}
+    img#pc{display: block;}
+}
+@media screen and (min-width: 1200px){
+    body{
+        background-image: url('../imagens/back-tv.jpg');
+    }
+    img#pc{display: none;}
+    img#tv{display: block;}
+    
+}
