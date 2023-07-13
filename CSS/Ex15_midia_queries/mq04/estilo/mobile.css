@@ -1,0 +1,39 @@
+
+/*Versão mobile*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 96vw;
+    height: 98.3vh;
+    background: url('../imagens/back-phone.jpg') no-repeat center center;
+    background-size: cover;
+}
+main{
+    text-align: center;
+    width: 85vw;
+
+    background-color: rgba(255, 255, 255, 0.842);
+
+    margin: auto;
+    margin-top: 10px;
+
+    padding: 10px;
+
+    border-radius: 10px;
+}
+h1{
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.486);
+}
+img{
+    margin: auto;
+    display: block;
+}
+img#cel{display: block;}
+img#tab{display: none;}
+img#print{display: none;}
+img#pc{display: none;}
+img#tv{display: none;}
