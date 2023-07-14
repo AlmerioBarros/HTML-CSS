@@ -13,7 +13,7 @@
     <header>
         <h1>Meu site</h1>
         <i id="burguer" class="material-symbols-outlined">menu</i>
-        <menu>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -34,5 +34,20 @@
         </article>
     </main>
     
+    <script>
+        var burg = document.getElementById('burguer')
+        burg.addEventListener("click",clickMenu)
+        var men = document.getElementById('itens')
+        function clickMenu(){
+            
+            if( men.style.display == 'block') {/*Se vc colocar como parametro [if('')] o display none, vc tem q dar um click a mais para funcionar*/
+                men.style.display = 'none';     /*Minha teoria é que o JS inicialmente so entende 'block' e 'n block' */
+            }else{                              /*Quando ele percebe q esta em 'n block',ai ele vai pesquisa o none, ai a função funciona*/
+                men.style.display = 'block';    /*O q faz ter dois passos,logo 2 clicks*/
+                                                /*Então começando o paramentro com block,ele ja entende q n esta em block e ja trasforma em none*/
+                                                /*O q fazter so 1 passo,logo 1 click*/
+            }
+        }
+    </script>
 </body>
 </html>
