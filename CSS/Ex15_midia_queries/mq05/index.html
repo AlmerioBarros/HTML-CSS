@@ -6,10 +6,11 @@
     <title>Meu site</title>
 
     <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/media_queries.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu site</h1>
         <i id="burguer" class="material-symbols-outlined">menu</i>
@@ -37,15 +38,24 @@
     <script>
         var burg = document.getElementById('burguer')
         burg.addEventListener("click",clickMenu)
-        var men = document.getElementById('itens')
+        var menu = document.getElementById('itens')
         function clickMenu(){
             
-            if( men.style.display == 'block') {/*Se vc colocar como parametro [if('')] o display none, vc tem q dar um click a mais para funcionar*/
-                men.style.display = 'none';     /*Minha teoria é que o JS inicialmente so entende 'block' e 'n block' */
+            if( menu.style.display == 'block') {/*Se vc colocar como parametro [if('')] o display none, vc tem q dar um click a mais para funcionar*/
+                menu.style.display = 'none';     /*Minha teoria é que o JS inicialmente so entende 'block' e 'n block' */
             }else{                              /*Quando ele percebe q esta em 'n block',ai ele vai pesquisa o none, ai a função funciona*/
-                men.style.display = 'block';    /*O q faz ter dois passos,logo 2 clicks*/
+                menu.style.display = 'block';    /*O q faz ter dois passos,logo 2 clicks*/
                                                 /*Então começando o paramentro com block,ele ja entende q n esta em block e ja trasforma em none*/
                                                 /*O q fazter so 1 passo,logo 1 click*/
+            }
+        }
+
+        function mudouTamanho(){
+            if(window.innerWidth >= 768){
+                menu.style.display = 'block'
+            }
+            else{
+                menu.style.display = 'none'
             }
         }
     </script>
